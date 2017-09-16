@@ -1,0 +1,16 @@
+{
+  "name": "codility",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.js",
+  "dependencies": {
+    "@types/jest": "^20.0.8",
+    "jest": "^21.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
