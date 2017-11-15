@@ -2,34 +2,6 @@
 let s = "CAGCCTAAAAACCCCCCCCCGTTTTT"
 let p = [2, 5, 0]
 let q = [4, 5, 6]
-// let res = []
-// function solutionBadPerf(s, p, q) {
-//     const res = []
-
-//     s = s.split('').map(x => {
-//         if (x == 'A') return 1
-//         if (x == 'C') return 2
-//         if (x == 'G') return 3
-//         if (x == 'T') return 4
-//     })
-
-//     p.forEach(function (element, i) {
-//         const start = element
-//         const end = q[i]
-//         let min = 4
-//         for (let t = start; t <= end; t++) {
-//             if (s[t] < min) min = s[t]
-//         }
-//         res.push(min)
-//     });
-//     return res
-// }
-
-
-// var t = solutionBadPerf(s, p, q)
-// console.log(t)
-
-
 
 
 // not from my own

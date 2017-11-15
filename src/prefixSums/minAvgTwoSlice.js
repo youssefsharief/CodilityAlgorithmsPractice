@@ -1,19 +1,4 @@
-
-
-
-var nums = [ 4, 5, 1, 5, 8,2, 2,1]
-
-// var averages = [0]
-
-// nums.forEach((x,i)=>{
-//     let avg = (averages[i]+x) / (i+1)
-//     averages.push(avg)
-// })
-
-
-// averages
-
-
+// not from my own
 function solution(arr) {
     var log = []
     for (let i = 0; i < arr.length - 1; i++) {
@@ -28,11 +13,9 @@ function solution(arr) {
             log = [min, i]
         }
     }
-
-
-
     return log[1]
 }
 
+var nums = [ 4, 5, 1, 5, 8,2, 2,1]
 var t = solution(nums)
 t
