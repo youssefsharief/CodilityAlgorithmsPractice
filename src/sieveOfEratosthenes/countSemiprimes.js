@@ -1,10 +1,11 @@
 function getPrimes(max) {
-    var sieve = [], i, j, primes = [];
-    for (i = 2; i <= max; ++i) {
+    let sieve = []
+    let primes = []
+    for (let i = 2; i <= max; ++i) {
         if (!sieve[i]) {
             // i has not been marked -- it is prime
             primes.push(i);
-            for (j = i << 1; j <= max; j += i) {
+            for (let j = i << 1; j <= max; j += i) {
                 sieve[j] = true;
             }
         }
@@ -13,8 +14,8 @@ function getPrimes(max) {
 }
 function getSemiPrimesInRangeFromPrimes(primes, N) {
     const semiprimes = []
-    for (var i = 0; i < primes.length; i++) {
-        for (var j = i; j < primes.length; j++) {
+    for (let i = 0; i < primes.length; i++) {
+        for (let j = i; j < primes.length; j++) {
             const multiple = primes[i] * primes[j]
             if (multiple <= N) semiprimes.push(multiple)
         }
