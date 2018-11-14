@@ -27,7 +27,11 @@ function getPrimeDivisors(num) {
     var sieve = [], i, j, primeDivisors = [];
     for (i = 2; i <= num; ++i) {
         if (!sieve[i] && num%i===0) {
-            // i has not been marked -- it is prime and is divisor
+            /* 
+            Grab all divisible numbers starting from 2 from smallest to greatest and mark all multiples.
+            For example, for 2, mark 2,4,6,8,etc. This way we are sure that when the loop goes to 4, it is already marked. This
+            way we ensure that 4 is not pushed to the primeDivisors array 
+            */
             primeDivisors.push(i);
             for (j = i << 1; j <= num; j += i) {
                 sieve[j] = true;

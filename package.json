@@ -5,12 +5,15 @@
   "main": "1.js",
   "dependencies": {
     "@types/jest": "^20.0.8",
+    "inspect": "0.0.2",
     "jest": "^21.0.2"
   },
   "scripts": {
     "test": "jest --watchAll"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  },
   "author": "",
   "license": "ISC"
 }

@@ -7,9 +7,9 @@
         "jasmine": true
     },
     "parserOptions": {
-        "ecmaVersion": 2017,
+        "ecmaVersion": 2018,
         "ecmaFeatures": {
-            "jsx": true
+            "experimentalObjectRestSpread": true
         },
         "sourceType": "module"
     },
@@ -25,7 +25,5 @@
         "no-func-assign": "warn",
         "no-inner-declarations": "warn",
         "getter-return": "warn"
-        
-
     }
 }
