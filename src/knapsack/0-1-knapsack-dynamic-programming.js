@@ -1,16 +1,16 @@
 // This is not correct since the right solution would be not to take the one with the most val/weight
 
-const maxWieght = 51
+const maxWieght = 10
 const items = [
-    { wt: 1, val: 7},
-    { wt: 10, val: 60 },
-    { wt: 20, val: 100 },
-    { wt: 30, val: 120 },
+    { wt: 6, val: 30},
+    { wt: 3, val: 14 },
+    { wt: 4, val: 16 },
+    { wt: 2, val: 9 },
 ]
 
 function solution(arr) {
-    arr.sort((a, b) => b.val / b.wt - a.val / a.wt)
-    
+    arr =  arr.sort((a, b) => b.val / b.wt - a.val / a.wt)
+    arr = undefined
     const knapSack = (weightRemaining, item) => weightRemaining - item.wt >= 0 ? item.val : 0 
 
 
